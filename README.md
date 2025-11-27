@@ -8,14 +8,9 @@ function to create fluid typography that adapts to any screen. With
 [94% global browser support](https://caniuse.com/css-math-functions), it works
 on nearly all devices.
 
-Designed for [Tailwind v4's](https://tailwindcss.com/blog/tailwindcss-v4)
-CSS-first system, no JavaScript configuration needed. Best suited for simple
-websites like blogs and articles.
-
-## Philosophy
-
-**Clampography** is built on three core principles to match
-`@tailwindcss/typography` quality standards while remaining pure CSS:
+Built for [Tailwind v4's](https://tailwindcss.com/blog/tailwindcss-v4) CSS-first
+architecture. Zero JavaScript configuration required. Best suited for blogs,
+documentation, and content-heavy websites.
 
 - **No default styling:** No colors, borders, transforms, or decorations.
 - **Structure only:** Manages size, spacing, weight, and font-family.
