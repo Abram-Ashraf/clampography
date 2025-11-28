@@ -223,32 +223,33 @@
 
   li {
     position: relative;
-    margin-bottom: var(--spacing-xs);
     padding-left: 0.375em; /* Space between marker and text */
   }
 
-  /* 
-   * CUSTOM BULLETS (UL)
-   * Perfectly centered dot relative to the first line of text.
-   */
+  /* Spacing between list items */
+  li + li {
+    margin-top: var(--spacing-xs);
+  }
+
+  /* Spacing before nested lists */
+  li > :where(ul, ol) {
+    margin-top: var(--spacing-xs);
+  }
+
+  /* Perfectly centered dot relative to the first line of text */
   ul > li::before {
     content: '';
     position: absolute;
-    /* Positioning relative to the li padding */
     left: -1.125em;
-    /* Vertically aligns with the first line (assuming line-height 1.75) */
     top: calc(0.875em - 0.1875em);
     width: 0.375em;
     height: 0.375em;
     background-color: currentColor;
     border-radius: 50%;
-    opacity: 0.4; /* Subtle visual weight */
+    opacity: 0.4;
   }
 
-  /* 
-   * CUSTOM NUMBERS (OL)
-   * Right-aligned numbers for professional look (e.g. "9." aligns with "10.")
-   */
+  /* Right-aligned numbers for professional look (e.g. "9." aligns with "10.") */
   ol {
     counter-reset: list-counter;
   }
@@ -260,18 +261,17 @@
   ol > li::before {
     content: counter(list-counter) '.';
     position: absolute;
-    left: -2.5em; /* More space for numbers */
-    width: 1.75em; /* Fixed width container for alignment */
+    left: -2.5em;
+    width: 1.75em;
     text-align: right;
-    font-weight: 600; /* Make numbers stand out structurally */
+    font-weight: 600;
     color: currentColor;
-    opacity: 0.6; /* Slightly lighter than text */
+    opacity: 0.6;
   }
 
-  /* Nested lists spacing */
+  /* Nested lists - indentation only, spacing handled by li rules above */
   :where(ul, ol) :where(ul, ol) {
-    margin-top: 0.5rem;
-    margin-bottom: 0.5rem;
+    margin-bottom: 0; /* Parent li spacing already handles this */
     padding-left: var(--spacing-md);
   }
 
@@ -370,7 +370,6 @@
   }
 
   figcaption {
-    margin-top: var(--spacing-xs);
     font-size: 0.875em;
     line-height: 1.5;
   }
@@ -451,7 +450,6 @@
   summary {
     cursor: pointer;
     font-weight: 600;
-    margin-bottom: var(--spacing-xs);
   }
 
   dialog {
