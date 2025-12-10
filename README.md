@@ -26,8 +26,8 @@ tasks.
 
 The heading sizes are very similar to the official Tailwind Typography plugin.
 However, some other font sizes might be a bit larger. It is best to visit the
-[demo page](/clampography) to see how it works. Visit the demo page to see
-exactly how it looks in a real browser.
+[demo page](https://dav.one/clampography/) to see how it works. Visit the demo
+page to see exactly how it looks in a real browser.
 
 ## Installation
 
