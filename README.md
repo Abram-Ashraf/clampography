@@ -17,6 +17,18 @@ documentation, and content-heavy websites.
 - **Smart scaling:** Contextual elements use `em` (relative), blocks use
   `clamp()` (fluid).
 
+### The purpose
+
+Tailwind CSS resets all default browser styles to give you full control.
+However, writing typography styles from scratch takes a lot of time.
+Clampography gives you a quick starting point so you can focus on more creative
+tasks.
+
+The heading sizes are very similar to the official Tailwind Typography plugin.
+However, some other font sizes might be a bit larger. It is best to visit the
+[demo page](/clampography) to see how it works. Visit the demo page to see
+exactly how it looks in a real browser.
+
 ## Installation
 
 ```bash
@@ -42,7 +54,7 @@ deno install npm:clampography
 /* Then import Clampography */
 @import "clampography";
 
-/* Override default heading styles */
+/* Then you can override Clampography's base styles */
 @layer base {
   h1 {
     font-size: clamp(2.35rem, 1.95rem + 1.5vw, 4rem);
