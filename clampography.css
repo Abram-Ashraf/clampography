@@ -382,13 +382,11 @@
     font-size: 0.875em;
     line-height: 1.6;
     overflow-x: auto;
-    /* Padding & background moved to global.css */
   }
 
   /* Code inside pre blocks */
   pre code {
     font-size: inherit;
-    /* Reset inline code styles if any user CSS exists */
     padding: 0;
     background: none;
     border-radius: 0;
@@ -402,7 +400,7 @@
     margin-top: var(--spacing-md);
     margin-bottom: var(--spacing-md);
     padding: var(--spacing-md);
-    border: 0; /* Remove default border - user adds styling */
+    border: 0;
   }
 
   legend {
