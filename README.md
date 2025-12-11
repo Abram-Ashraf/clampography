@@ -1,7 +1,7 @@
 # 🙌 Clampography
 
 [![npm version](https://img.shields.io/npm/v/clampography)](https://www.npmjs.com/package/clampography)
-[![license](https://img.shields.io/npm/l/clampography)](https://github.com/your-username/clampography/blob/main/LICENSE)
+[![license](https://img.shields.io/npm/l/clampography)](https://github.com/Avaray/clampography/blob/main/LICENSE)
 [![minzipped size](https://img.shields.io/bundlephobia/minzip/clampography)](https://bundlephobia.com/package/clampography)
 
 **Clampography** is a CSS-only alternative to the official
