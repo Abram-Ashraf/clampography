@@ -19,8 +19,10 @@ on nearly all modern devices.
 [Tailwind's Preflight](https://tailwindcss.com/docs/preflight) remove all
 browser typography defaults, leaving you with unstyled text. **Clampography**
 delivers production-ready text scaling that responds to viewport changes
-automatically, while leaving all aesthetic choices to you. Visit the temporary
-[demo page](https://next.dav.one/clampography/) to see how it looks.
+automatically, while leaving all aesthetic choices to you.
+
+Visit the temporary [demo page](https://next.dav.one/clampography/) to see how
+it looks.
 
 ## Requirements
 
